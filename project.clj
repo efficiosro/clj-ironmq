@@ -12,4 +12,4 @@
              :1.5 {:dependencies [[org.clojure/clojure "1.5.1"]]}
              :1.7 {:dependencies [[org.clojure/clojure "1.7.0-alpha5"]]}}
   :aliases {"all" ["with-profile" "dev,1.5:dev:dev,1.7"]}
-  :signing {:gpg-key "Yury Yantsevich (Efficio s.r.o.) <yury@efficio.cz>"})
+  :signing {:pgp-key "8FE40DC1"})
