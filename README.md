@@ -49,19 +49,6 @@ With Maven:
   (:require [clj-ironmq.core :as imq]))
 ```
 
-1.  Error Handling
-
-    `clj-ironmq` does not raises exceptions. It returns entity of IronMQ's
-    response: queues, messages, etc. Some operations do not return entity, but
-    operation status. In this case, the library returns string status.
-    
-    If IronMQ raises error, `clj-ironmq` returns hash with two fields:
-    
-    ```clojure
-    {:status 503 ;; HTTP status code, if available
-     :msg "Internal service error"} ;; message from IronMQ, if provided
-    ```
-
 ### Create a Client
 
 `clj-ironmq` follows Iron.io's configuration scheme.
@@ -393,6 +380,19 @@ as bodies, merge with provided options, and post to IronMQ.
 ;; => "6112036504973630987"
 ;; Message, that was sent:
 ;; {:body "{\"my\":\"body\"}", :delay 30}
+```
+
+### Error Handling
+
+`clj-ironmq` does not raises exceptions. It returns entity of IronMQ's
+response: queues, messages, etc. Some operations do not return entity, but
+operation status. In this case, the library returns string status.
+
+If IronMQ raises error, `clj-ironmq` returns hash with two fields:
+
+```clojure
+{:status 503 ;; HTTP status code, if available
+ :msg "Internal service error"} ;; message from IronMQ, if provided
 ```
 
 ## Contribution and Tests
