@@ -1,9 +1,9 @@
-(defproject clj-ironmq "0.1.1-SNAPSHOT"
+(defproject efficiosro/clj-ironmq "0.1.1-SNAPSHOT"
   :description "A Clojure library for intercommunication with IronMQ v3 API."
   :url "https://github.com/efficiosro/clj-ironmq"
   :scm {:name "git", :url "https://github.com/efficiosro/clj-ironmq"}
-  :license {:name "MIT License"
-            :url "http://opensource.org/licenses/mit-license.php"
+  :license {:name "The MIT License"
+            :url "http://opensource.org/licenses/MIT"
             :distribution :repo}
   :min-lein-version "2.0.0"
   :dependencies [[cheshire "5.4.0"]
