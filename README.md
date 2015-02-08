@@ -1,9 +1,9 @@
 
-# IronMQ Client Library for Clojure
+# IronMQ v3 Client Library for Clojure
 
-Highly available, persistent by design, with one-time delivery, IronMQ
-is the only industrial strength, cloud-native solution for your modern
-application architecture. (c) [iron.io](http://www.iron.io/mq)
+> Highly available, persistent by design, with one-time delivery, IronMQ
+> is the only industrial strength, cloud-native solution for your modern
+> application architecture. (c) [iron.io](http://www.iron.io/mq)
 
 This library supports IronMQ v3 HTTP API only. Full API documentation
 could be found on [Iron.io's dev site](http://dev.iron.io/mq-onpremise/).
@@ -24,9 +24,7 @@ repository definition to `pom.xml`:
 
 With Leiningen:
 
-```clojure
-[clj-ironmq "0.1.1"]
-```
+![img](http://clojars.org/efficiosro/clj-ironmq/latest-version.svg)
 
 With Maven:
 
