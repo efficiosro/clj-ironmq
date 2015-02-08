@@ -16,7 +16,7 @@ repository definition to `pom.xml`:
 ```xml
 <repository>
   <id>clojars.org</id>
-  <url>http://clojars.org/repo</url>
+  <url>http://clojars.org/repo/</url>
 </repository>
 ```
 
@@ -25,16 +25,16 @@ repository definition to `pom.xml`:
 With Leiningen:
 
 ```clojure
-[clj-ironmq "0.0.5"]
+[clj-ironmq "0.1.1"]
 ```
 
 With Maven:
 
 ```xml
 <dependency>
-  <groupId>featalion</groupId>
+  <groupId>efficiosro</groupId>
   <artifactId>clj-ironmq</artifactId>
-  <version>0.0.3</version>
+  <version>0.1.1</version>
 </dependency>
 ```
 
