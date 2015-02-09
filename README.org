@@ -384,11 +384,13 @@ as bodies, merge with provided options, and post to IronMQ.
 
 *** Error Handling
 
-=clj-ironmq= does not raises exceptions. It returns entity of IronMQ's
-response: queues, messages, etc. Some operations do not return entity, but
-operation status. In this case, the library returns string status.
+=clj-ironmq= tries to do not raise exceptions. In the case of success, it
+returns entity of IronMQ's response: queues, messages, etc. Some operations
+do not return entity, but operation status. In this case, the library returns
+string status.
 
-If IronMQ raises error, =clj-ironmq= returns hash with two fields:
+If IronMQ returns error, or other HTTP issue is accrued, =clj-ironmq= returns
+hash with two fields:
 
 #+BEGIN_SRC clojure
 {:status 503 ;; HTTP status code, if available
