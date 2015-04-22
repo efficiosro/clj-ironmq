@@ -178,7 +178,7 @@ This is related to [[http://dev.iron.io/mq-onpremise/reference/push_queues/][pus
   [{:name "sub-0", :url "ironmq:///first-queue"}
    {:name "sub-1", :url "ironmq:///second-queue"}])
 
-(imq/replace-queue-subscribers client "push-queue")
+(imq/replace-queue-subscribers client "push-queue" new-subs)
 ;; => "Updated"
 ;; Use `(imq/get-queue client "push-queue")` to see the changes.
 #+END_SRC
@@ -408,7 +408,9 @@ If you think different, feel free to make pull request.
 
 ** Copyright and License
 
-Copyright (c) 2015 Yury Yantsevich, [[http://efficio.cz][Efficio s.r.o.]]
+Copyright (c) 2015 Yury Yantsevich, [[http://www.efficio.cz][Efficio s.r.o.]]
+
+The MIT License.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

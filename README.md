@@ -176,7 +176,7 @@ This is related to [push queues](http://dev.iron.io/mq-onpremise/reference/push_
   [{:name "sub-0", :url "ironmq:///first-queue"}
    {:name "sub-1", :url "ironmq:///second-queue"}])
 
-(imq/replace-queue-subscribers client "push-queue")
+(imq/replace-queue-subscribers client "push-queue" new-subs)
 ;; => "Updated"
 ;; Use `(imq/get-queue client "push-queue")` to see the changes.
 ```
