@@ -2,7 +2,7 @@
   (:require [cheshire.core :as json]
             [clj-http.client :as http]))
 
-(def aws-host "mq-aws-us-east-1.iron.io")
+(def aws-host "mq-aws-us-east-1-1.iron.io")
 (def rackspace-host "mq-rackspace-dfw.iron.io")
 
 (def ^:private config-keys
