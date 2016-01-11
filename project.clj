@@ -1,4 +1,4 @@
-(defproject efficiosro/clj-ironmq "0.1.1-SNAPSHOT"
+(defproject efficiosro/clj-ironmq "0.1.2-SNAPSHOT"
   :description "A Clojure library for intercommunication with IronMQ v3 API."
   :url "https://github.com/efficiosro/clj-ironmq"
   :scm {:name "git", :url "https://github.com/efficiosro/clj-ironmq"}
