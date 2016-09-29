@@ -24,7 +24,7 @@ repository definition to `pom.xml`:
 
 With Leiningen:
 
-![img](http://clojars.org/efficiosro/clj-ironmq/latest-version.svg)
+[![Clojars Project](http://clojars.org/efficiosro/clj-ironmq/latest-version.svg)](https://clojars.org/efficiosro/clj-ironmq)
 
 With Maven:
 
